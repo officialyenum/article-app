@@ -100,7 +100,7 @@
                             <div class="position-sticky" style="top: 2rem;">
                               <div class="p-4 mb-3 bg-light rounded">
                                 <h4 class="fst-italic">About</h4>
-                                <p class="mb-0">Project By Trust Edoyugbo.</p>
+                                <p class="mb-0">This is a Full Stack CMS Application with role-access for article creation, reading and commenting underneath each article, it was. built with laravel and livewire By <a href="https://yenum.dev" class="btn btn-outline-primary" >Chukwuyenum Opone</a></p>
                               </div>
 
                               <div class="p-4">
