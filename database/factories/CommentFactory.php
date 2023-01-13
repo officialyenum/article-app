@@ -19,9 +19,8 @@ class CommentFactory extends Factory
         $rand = random_int(10,20);
         $randPost = random_int(1,10);
         $randUser = random_int(3,6);
-        $content = fake()->sentence($rand);
         return [
-            'content' => $content,
+            'content' => 'content',
             'post_id' => $randPost,
             'user_id' => $randUser,
         ];

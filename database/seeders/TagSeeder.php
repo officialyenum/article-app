@@ -19,27 +19,24 @@ class TagSeeder extends Seeder
         //Truncate Tag
         Tag::truncate();
         // id: 1
-        Tag::factory()->create([
+        Tag::create([
             'name' => 'Html',
             'slug' => Str::slug('Html')
         ]);
         // id: 2
-        Tag::factory()->create([
+        Tag::create([
             'name' => 'Python',
             'slug' => Str::slug('Python')
         ]);
         // id: 3
-        Tag::factory()->create([
+        Tag::create([
             'name' => 'English Premier League',
             'slug' => Str::slug('English Premier League')
         ]);
         // id: 4
-        Tag::factory()->create([
+        Tag::create([
             'name' => 'Arsenal',
             'slug' => Str::slug('Arsenal')
         ]);
-
-        //Generate 2 extra Tags
-        Tag::factory()->count(2)->create();
     }
 }

@@ -17,13 +17,13 @@ class PostFactory extends Factory
      */
     public function definition()
     {
-        $randomNos = random_int(2,4);
-        $randomWords = random_int(50,100);
-        $title = fake()->sentence($randomNos);
+        // $randomNos = random_int(2,4);
+        // $randomWords = random_int(50,100);
+        // $title = fake()->sentence($randomNos);
         return [
-            'title' => $title,
-            'slug' => Str::slug($title),
-            'body' => fake()->sentence($randomWords),
+            'title' => 'title',
+            'slug' => Str::slug('title'),
+            'body' => 'body content',
             'category_id' => random_int(1,6),
             'user_id' => random_int(1,2)
         ];

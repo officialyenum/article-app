@@ -19,8 +19,8 @@ class TagFactory extends Factory
     {
         $name = fake()->sentence(1);
         return [
-            'name' => ucfirst($name),
-            'slug' => Str::slug($name),
+            'name' => 'tag_name',
+            'slug' => Str::slug('tag'),
         ];
     }
 }

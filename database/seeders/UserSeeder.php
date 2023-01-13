@@ -24,7 +24,7 @@ class UserSeeder extends Seeder
         $hashPass = Hash::make('password');
 
         //Seed Admin User
-        $user1 = User::factory()->create([
+        $user1 = User::create([
             'first_name' => 'Admin',
             'last_name' => 'Article',
             'email' => 'admin@article.com',
@@ -45,7 +45,7 @@ class UserSeeder extends Seeder
         ]);
 
         //Seed Author User
-        $user2 = User::factory()->create([
+        $user2 = User::create([
             'first_name' => 'Author',
             'last_name' => 'Article',
             'email' => 'author@article.com',
@@ -66,7 +66,7 @@ class UserSeeder extends Seeder
         ]);
 
         //Seed Author User
-        $user3 = User::factory()->create([
+        $user3 = User::create([
             'first_name' => 'Test',
             'last_name' => 'User',
             'email' => 'test.user@article.com',
@@ -85,22 +85,5 @@ class UserSeeder extends Seeder
             'mimeType' => 'image',
             'user_id' => $user3->id
         ]);
-
-        //Create 5 Default Users with factory
-        $users = User::factory()->count(5)->create();
-
-        //Save Avatar
-        foreach ($users as $user) {
-            $user->avatar()->create([
-                'title' => 'post image/w0lg2wjzygjok6dyhoyh',
-                'slug' => Str::slug('post-imagew0lg2wjzygjok6dyhoyh'),
-                'url' => 'https://res.cloudinary.com/dlfu3ltay/image/upload/v1673087568/post%20image/w0lg2wjzygjok6dyhoyh.png',
-                'path' => 'https://res.cloudinary.com/dlfu3ltay/image/upload/v1673087568/post%20image/w0lg2wjzygjok6dyhoyh.png',
-                'description' => 'image',
-                'size' => 373406,
-                'mimeType' => 'image',
-                'user_id' => $user->id
-            ]);
-        }
     }
 }

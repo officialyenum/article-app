@@ -17,8 +17,5 @@ class CommentSeeder extends Seeder
     {
         //Truncate Comments
         Comment::truncate();
-
-        //Factory Generate 50 comments
-        Comment::factory()->count(50)->create();
     }
 }

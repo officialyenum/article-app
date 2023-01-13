@@ -19,27 +19,24 @@ class CategorySeeder extends Seeder
         //Truncate Category
         Category::truncate();
         // id: 1
-        Category::factory()->create([
+        Category::create([
             'name' => 'News',
             'slug' => Str::slug('News')
         ]);
         // id: 2
-        Category::factory()->create([
+        Category::create([
             'name' => 'Entertainment',
             'slug' => Str::slug('Entertainment')
         ]);
         // id: 3
-        Category::factory()->create([
+        Category::create([
             'name' => 'Technology',
             'slug' => Str::slug('Technology')
         ]);
         // id: 4
-        Category::factory()->create([
+        Category::create([
             'name' => 'Sports',
             'slug' => Str::slug('Sports')
         ]);
-
-        //Generate 2 extra Factories
-        Category::factory()->count(2)->create();
     }
 }

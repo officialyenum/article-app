@@ -19,17 +19,17 @@ class RoleSeeder extends Seeder
         Role::truncate();
 
         //Create Default Role
-        Role::factory()->create([
+        Role::create([
             'name' => 'Default'
         ]);
 
         //Create Author Role
-        Role::factory()->create([
+        Role::create([
             'name' => 'Author'
         ]);
 
         //Create Administrator Role
-        Role::factory()->create([
+        Role::create([
             'name' => 'Administrator'
         ]);
     }
