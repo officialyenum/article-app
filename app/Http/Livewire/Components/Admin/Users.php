@@ -138,8 +138,8 @@ class Users extends Component
     {
         //set form validation rules
         $this->validate([
-            'first_name' => 'required|min:3',
-            'last_name' => 'required|min:3',
+            'first_name' => 'min:3',
+            'last_name' => 'min:3',
             'avatar' => 'image|mimes:jpg,png,jpeg,gif,svg|max:1024'
         ]);
 
